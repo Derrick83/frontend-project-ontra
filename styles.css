@@ -39,7 +39,7 @@ hr {
 #logo{
 	display: inline-block;
 	float: left;
-	padding: 1% 1% 1% 1%
+	padding: .5em 1% 1% 1%
 }
 
 /*search in header*/

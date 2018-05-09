@@ -14,11 +14,12 @@ function loadAllPosts (posts, users){
 
     })
 
-    let memoryStatus = Box.fetch(localStorageId.toString());
-    if(typeof memoryStatus === 'string'){
-        $("#addStatus").append(newStatus(users, localStorageId, 'Daniel Craig', [], memoryStatus, 'images/profile/daniel-craig.jpg'))
-        console.log(localStorageId);
-        localStorageId++;
-    }
+    // box is buggy for now
+    // let memoryStatus = Box.fetch(localStorageId.toString());
+    // if(typeof memoryStatus === 'string'){
+    //     $("#addStatus").append(newStatus(users, localStorageId, 'Daniel Craig', [], memoryStatus, 'images/profile/daniel-craig.jpg'))
+    //     console.log(localStorageId);
+    //     localStorageId++;
+    // }
     
 }

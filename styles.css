@@ -164,8 +164,8 @@ h3.navBarButtons {
 /* --------- */
 
 .bold-blue-name {
+	font-weight: bold;
 	margin: 0 0 0;
-	font-style: bold;
 	color: #0297C9;
 }
 

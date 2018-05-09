@@ -5,7 +5,7 @@ function newStatus (users, postId, name, comments, status, image){
                 '<div class="column left-status-column">'+
                     '<img src=/'+ image + ' id="logo"/>'+
                 '</div>'+
-                '<p class="bold-blue-name">'+ name +'</p>'+
+                '<p class="bold-blue-name" style="margin-top:8px;">'+ name +'</p>'+
                 '<p class="paragraph-alignment">' + status +'</p>'+
            '</div>'+
            allComments(comments,users) +

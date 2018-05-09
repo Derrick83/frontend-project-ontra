@@ -1,0 +1,78 @@
+<!DOCTYPE HTML >
+<html>
+<head>
+	<title>The network</title>
+	
+	<link rel="stylesheet" type="text/css" href="normalize.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+	
+	<div id="header">
+
+		<div id="logo">
+			<img src="images/logo.png" alt="the network"/>
+		</div>	
+
+		<div id="search">
+			<form method="get" action="#">
+				<input type="search" name="terms" placeholder="Search...."/>
+				<input type="submit" value="Go"/>
+			</form>
+		</div>
+
+		<div id="navOptions">
+			<h3 class="navBarButtons"> Home </h3>
+			<h3 class="navBarButtons" id="openModal"> Post an update </h3>
+			<img id="comment-logo" src="/images/profile/daniel-craig.jpg"/>
+		</div>
+
+	</div>
+	
+	<div id="page">
+		<!-- profile icon and name -->
+		<div class="column outer-left-column">
+				<img src="/images/profile/daniel-craig.jpg" id="logo" type="logo"/>
+				<p class='icon-title'>_Daniel Craig</p>
+		</div>
+
+		<!-- outer container with status/comments and posts inside -->
+		<div class="column outer-right-column" id="addStatus">
+			<div style="padding-bottom:1em">
+				<h3 style="padding-left:.5em; margin-top:.3em"> Updates</h3>
+			</div>
+			<!-- area for posts , comments get created dynamically in js file -->
+			<div class="column right-status-column" id="addPost">
+				
+			</div>
+		</div>	
+		<!-- footer message  -->
+		<div class="row" style="text-align:center">
+			<br>
+			<p>This is a footer mesage</p>
+		</div>
+	</div>
+</body>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<h4>Status Update</h4>
+		<textarea id="submitPost" style="width:98%" rows="4" columns="5" value=''></textarea>
+		<p>hit enter to post</p>
+	</div>
+	  
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<script type="text/javascript" src="/resources/box.js/box.js"></script>
+<script src="index.js"> </script>
+
+</html>
